@@ -1,0 +1,62 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* white-space: nowrap;	*/
+}
+
+
+body{
+	margin-top: 50px;
+    color: #000000;
+    background-color: darkgray;
+    font-size: 14px;
+}
+
+#global{
+    width: 800px;
+    height: 600px;   
+    background-color: bisque;
+    margin: 0 auto;
+}
+
+header, footer {
+    height: 100px;   
+    background-color: aqua;
+}
+
+h1 {
+    text-align: center;  
+	width: 50%;
+	background-color: pink;
+	display: inline-block;
+}
+
+
+
+/* La navigation */
+nav {
+    width: 50%;
+	height: 20px;
+    background-color: rgba(0,0,0,0.5);
+	display: inline-block;
+}
+
+
+section {
+    width: 50%;
+    height: 450px;  
+    background-color:cadetblue;
+	display: inline-block;
+}
+
+footer {
+    height: 100px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+@font-face {
+  font-family: "Sketch3D";
+  src: url("../polices/Sketch3D.woff");
+  src: url("../polices/Sketch3D.otf");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body{
+	margin-top: 50px;
+    color: #000000;
+    background-color: darkgray;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+}
+
+#global{
+    width: 800px;
+    /*height: 600px;   temp. */
+    background-color: bisque;
+    margin: 0 auto;
+	-webkit-box-shadow: 0px 2px 11px 4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 11px 4px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 11px 4px rgba(0,0,0,0.75);
+	border-radius: 10px;
+}
+
+#global, header, footer, section, nav, li {
+    box-sizing: border-box;
+}
+
+header, footer {
+    /*height: 100px;   temp. */
+    background-color: aqua;
+}
+
+header {
+    background: url(../images/05icone.gif) repeat-x bottom;
+}
+
+/* La navigation */
+nav {
+    width: 400px;
+    /*float: right; */
+	display: inline-block;
+    background-color: rgba(0,0,0,0.5);
+    margin-top: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 30px;
+    margin: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    padding: 16px 3px;
+
+}
+
+section {
+    width: 50%;
+    /* height: 450px;  */
+    background-color:cadetblue;
+	clear: both;
+    /* float: left; */
+	display: inline-block;   /* possible mais moins simple??  */
+    padding: 0 20px 0 20px;
+    text-align:justify;
+}
+
+footer {
+    height: 100px;
+    clear: both;
+    text-align: right;
+    padding-top: 60px;
+    padding-right: 20px;
+    background: url(../images/05icone.gif) repeat-x top;
+    font-style: italic;
+}
+
+h1 {
+    text-align: center;  
+    /*margin: 50px;
+     float: left; */
+	font-family: "Sketch3D";
+	width: 400px;
+	font-size: 2.5em;
+	margin-top: 10px;
+}
+
+figure {
+    
+    background-color: rgba(255,255,255,0.5);
+}
+
+#fig1 {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+#fig2 {
+    display: flex;
+      flex-wrap: wrap;
+  justify-content: center;
+    width: 50%;
+    float: right;
+    margin: 0 0 0 10px;
+    padding-top: 5px;
+}
+
+figcaption {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    font-size: 10px;
+    padding: 2px;
+}
+
+
+
+/* li.actif {
+        background-color: black;
+}   */
+
+li[class="actif"] {
+        background-color: black;
+}
+
+
+
+/* a[href] {
+	    text-decoration: line-through;
+}
+*/
+
+a[href="#"] {
+	    text-decoration: line-through;
+}
+
+
+a {
+    color: white;
+
+}
+
+a:hover, li.actif a, a:hover span {
+    color: yellow;
+}
+
+
+h2:first-child, p:last-child {
+	font-style: italic;
+}
+
+/* p:nth-child(2){
+	color: white;
+}  */
+
+p:nth-of-type(3n) {
+    color: white;
+}
+
+
+
+
+
+
+

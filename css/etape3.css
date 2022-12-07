@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+@font-face {
+  font-family: "Sketch3D";
+  src: url("../polices/Sketch3D.woff");
+  src: url("../polices/Sketch3D.otf");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* white-space: nowrap;	*/
+}
+
+
+body{
+	margin-top: 50px;
+    color: #000000;
+    background-color: darkgray;
+	font-family: Montserrat, sans-serif;
+    font-size: 14px;
+}
+
+#global{
+    width: 800px;
+    /* height: 600px;   */
+    background-color: bisque;
+    margin: 0 auto;
+	-webkit-box-shadow: 0px 2px 11px 4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 11px 4px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 11px 4px rgba(0,0,0,0.75);
+	border-radius: 10px;
+}
+
+header, footer {
+    height: 100px;   
+    background-color: aqua;
+}
+
+header {
+    background: url(../images/05icone.gif) repeat-x bottom;
+}
+
+h1 {
+    text-align: center;  
+	width: 50%;
+	/* background-color: pink; */
+	display: inline-block;
+	font-family: "Sketch3D";
+	font-size: 2.5em;
+	margin-top: 10px;
+}
+
+
+
+/* La navigation */
+nav {
+    width: 50%;
+	/* height: 20px; */
+    background-color: rgba(0,0,0,0.5);
+	display: inline-block;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 30px;
+    margin: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    padding: 16px 3px;
+
+}
+
+nav ul li[class="actif"] {
+        background-color: black;
+}
+
+
+/* Le contenu principal */
+section {
+    width: 50%;
+    /* height: 450px;  */
+    background-color:cadetblue;
+	display: inline-block;
+	vertical-align: top;
+	padding: 20px;
+    text-align:justify;
+}
+
+header + section {
+    height: 415px;
+}
+
+/* Figures et images */
+figure {
+    background-color: rgba(255,255,255,0.5);
+}
+
+#fig1 {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+#fig2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    float: right;
+    margin: 0 0 0 10px;
+    padding-top: 5px;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: 10px;
+    padding: 2px;
+}
+
+footer {
+    height: 100px;
+    clear: both;
+    text-align: right;
+    padding-top: 60px;
+    padding-right: 20px;
+    background: url(../images/05icone.gif) repeat-x top;
+    font-style: italic;
+}
+
+/* Les autres éléments */
+a[href="#"] {
+	    text-decoration: line-through;
+}
+
+
+a {
+    color: white;
+
+}
+
+a:hover, li.actif a, a:hover span {
+    color: yellow;
+}
+
+h2:first-child, p:last-child {
+	font-style: italic;
+}
+
+p {
+	padding-top: 5px;
+}  
+
+/*p:nth-of-type(3n) {
+    color: white;
+}*/
+
+figure ~ p  {
+    color: white;
+}
+
+
+
+
